@@ -51,7 +51,7 @@ function resultado() {
         p5 = 1
     }
     if (p5 == 1) {
-        document.querySelectorAll('.pregunta5')[3].style.color = '#00FF00'
+        document.querySelectorAll('.pregunta5')[1].style.color = '#00FF00'
     }
     else {
         p5 = 0
@@ -62,7 +62,7 @@ function resultado() {
         p6 = 1
     }
     if (p6 == 1) {
-        document.querySelectorAll('.pregunta6')[3].style.color = '#00FF00'
+        document.querySelectorAll('.pregunta6')[0].style.color = '#00FF00'
     }
     else {
         p6 = 0
@@ -82,12 +82,12 @@ function resultado() {
     /*OPERACIÓN PARA OBTENER ACIERTOS*/
     nota = p1 + p2 + p3 + p4 + p5 + p6 + p7;
     if (nota == 7) {
-        msj = ".   Felicidades! eres todo un Potterhead."
+        msj = ".   |   Felicidades! eres todo un Potterhead."
     }
     else if (nota <= 6 && nota >= 4) {
-        msj = ".   Nada mal, pero te hace falta ver más Harry Potter."
+        msj = ".   |   Nada mal, pero te hace falta ver más Harry Potter."
     } else {
-        msj = ".   Buuu! sin palabras."
+        msj = ".   |   Buuu! Ni a Muggle llegas."
     }
 
     document.getElementById('resultado').innerHTML = "Aciertos: " + nota + msj;
