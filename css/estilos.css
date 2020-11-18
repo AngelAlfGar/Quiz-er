@@ -40,6 +40,11 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Estilos para los elementos con class="renglon-one" */
+.renglon-one {
+  text-align: center;
+}
+
 /* Estilos para los elementos con class="gif-parr" . */
 .gif-parr {
   border: thick groove #FFC012;
@@ -75,8 +80,7 @@ mi-footer {
 p{
     color:#FFC012;
     font:normal 16px sans-serif;
-    margin-bottom: 1.5rem;
-    
+    margin-bottom: 1.5rem; 
 }
 
 
