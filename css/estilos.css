@@ -1,3 +1,6 @@
+/*HOJA DE ESTILOS PARA PROYECTO QUIZ-ER*/
+/*CREADO POR: LUIS ANGEL ALFARO GARCÍA*/
+
 /* Estilo para el elemento body. */
 body {
   background-color: black;
@@ -5,17 +8,18 @@ body {
 
 /* Estilo para ajustar el panel con class="container". */
 .container {
-  margin: 1.5em 2em;
+  margin: 2em 2em;
   overflow: auto;
   text-align: center;
 }
 
+/* Estilo para ajustar el panel con class="containerQuiz" 
+(Para interfacez con los cuestionarios). */
 .containerQuiz {
-  margin: 1.5em 2em;
+  margin: 1em 2em;
   overflow: auto;
   text-align: left;
 }
-
 
 /* Estilo para elementos con class="parraf". */
 .parraf {
@@ -25,19 +29,15 @@ body {
   padding: 1rem 1rem;
   margin: 2rem 2rem;
   color: black;
+  font-weight: bold;
   background-color: #FFC012;
-}
-
-/* Estilos para los elementos con class="renglon-one" */
-.renglon-one {
-  text-align: center;
 }
 
 /* Estilos para los elementos con class="columna" . */
 .columna {
   width: 70%;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Estilos para los elementos con class="gif-parr" . */
@@ -49,35 +49,35 @@ body {
   height: 150px;
 }
 
-/* Estilo para el elemento footer. */
+/* Estilo para la clase MiFooter. */
 mi-footer {
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #FFC012;
 }
 
-.img-title {
-  color: #FFC012;
-  margin-bottom: 1rem;
-}
-
-.p-b{
-    color: #FFC012;
-}
+/* Estilo para elemento con id="resultado". */
 #resultado{
     color: #FFC012;
 }
 
-input{
+/* Estilo para elementos con class="btn". */
+.btn{
     font-weight: bold;
     color: black;
     background-color:#FFC012;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
+/* Estilo para elemento "p". */
 p{
     color:#FFC012;
     font:normal 16px sans-serif;
+    margin-bottom: 1.5rem;
+    
 }
+
+
 
