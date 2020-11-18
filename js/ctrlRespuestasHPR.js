@@ -2,7 +2,7 @@ function resultado() {
     var p1, p2, p3, p4, p5, p6, p7, nota;
 
 
-    /*PREGUNTA 1*/
+    /*SE EVALUA PREGUNTA 1*/
     if (document.getElementById('p11').checked == true) {
         p1 = 1
     }
@@ -13,7 +13,7 @@ function resultado() {
         p1 = 0
     }
 
-    /*PREGUNTA 2*/
+    /*SE EVALUA PREGUNTA 2*/
     if (document.getElementById('p22').checked == true) {
         p2 = 1
     }
@@ -24,7 +24,7 @@ function resultado() {
         p2 = 0
     }
 
-    /*PREGUNTA 3*/
+    /*SE EVALUA PREGUNTA 3*/
     if (document.getElementById('p33').checked == true) {
         p3 = 1
     }
@@ -35,7 +35,7 @@ function resultado() {
         p3 = 0
     }
 
-    /*PREGUNTA 4*/
+    /*SE EVALUA PREGUNTA 4*/
     if (document.getElementById('p44').checked == true) {
         p4 = 1
     }
@@ -46,7 +46,7 @@ function resultado() {
         p4 = 0
     }
 
-    /*PREGUNTA 5*/
+    /*SE EVALUA PREGUNTA 5*/
     if (document.getElementById('p52').checked == true) {
         p5 = 1
     }
@@ -57,7 +57,7 @@ function resultado() {
         p5 = 0
     }
 
-    /*PREGUNTA 6*/
+    /*SE EVALUA PREGUNTA 6*/
     if (document.getElementById('p61').checked == true) {
         p6 = 1
     }
@@ -68,7 +68,7 @@ function resultado() {
         p6 = 0
     }
 
-    /*PREGUNTA 7*/
+    /*SE EVALUA PREGUNTA 7*/
     if (document.getElementById('p74').checked == true) {
         p7 = 1
     }
@@ -79,18 +79,23 @@ function resultado() {
         p7 = 0
     }
 
-    /*OPERACIÓN PARA OBTENER ACIERTOS*/
+    /*OPERACIÓN PARA OBTENER NOTA*/
     nota = p1 + p2 + p3 + p4 + p5 + p6 + p7;
+
+    /*CONDICIONAL DE MENSAJE ADICIONAL*/
     if (nota == 7) {
-        msj = ".   |   Felicidades! eres todo un Potterhead."
+        msj = ".   |   Felicidades! eres todo un Potterhead. &#129497;"
     }
     else if (nota <= 6 && nota >= 4) {
-        msj = ".   |   Nada mal, pero te hace falta ver más Harry Potter."
+        msj = ".   |   Nada mal, pero te hace falta ver más Harry Potter. &#128527;"
     } else {
-        msj = ".   |   Buuu! Ni a Muggle llegas."
+        msj = ".   |   Ummm! Ni a Muggle llegas. &#128514"
     }
 
+    /*CONCATENACIÓN MENSAJE FINAL*/
     document.getElementById('resultado').innerHTML = "Aciertos: " + nota + msj;
+
+    /*MENSAJE EMERGENTE DE CONFIRMACIÓN*/
     rs = confirm("¿Ya haz finalizado?");
     if (rs == false) {
         document.forms[0].reset(); location.reload()
