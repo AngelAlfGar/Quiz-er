@@ -1,0 +1,81 @@
+/* Estilo para el elemento body. */
+body {
+  background-color: black;
+}
+
+/* Estilo para ajustar el panel con class="container". */
+.container {
+  margin: 1.5em 2em;
+  overflow: auto;
+  text-align: center;
+}
+.containerQuiz {
+  margin: 1.5em 2em;
+  overflow: auto;
+  text-align: left;
+}
+
+
+/* Estilo para elementos con class="parraf". */
+.parraf {
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  color: black;
+  background-color: #FFC012;
+}
+
+/* Estilos para los elementos con class="renglon-one" */
+.renglon-one {
+  text-align: center;
+}
+
+/* Estilos para los elementos con class="columna" . */
+.columna {
+  width: 70%;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para los elementos con class="gif-parr" . */
+.gif-parr {
+  border: thick groove #FFC012;
+  border-radius: 35px;
+  margin-bottom: .5rem;
+  width: 250px;
+  height: 150px;
+}
+
+/* Estilo para el elemento footer. */
+mi-footer {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #FFC012;
+}
+
+.img-title {
+  color: #FFC012;
+  margin-bottom: 1rem;
+}
+
+.p-b{
+    color: #FFC012;
+}
+#resultado{
+    color: #FFC012;
+}
+
+input{
+    font-weight: bold;
+    color: black;
+    background-color:#FFC012;
+    display: inline-block;
+}
+
+p{
+    color:#FFC012;
+    font:normal 16px sans-serif;
+}
+
