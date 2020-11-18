@@ -4,63 +4,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QUIZ-ER</title>
-  <link href="css/estilos.css" rel="stylesheet">
-  <script src="ctrlRespuestasHPR.js"></script>
+  <title>QUIZ-ER / MARVEL</title>
+  <link href="../favicon.png" rel="shortcut icon" type="image/png" />
+  <link href="../css/estilos.css" rel="stylesheet">
+  <script src="../js/ctrlRespuestasMVL.js"></script>
+  <script type="module" src="../cmp/mi-footer.js"></script>
 </head>
+
 <body>
-    <div class="containerQuiz">
-<hr>
-<img src="logo.png">
-<hr>
-<form>
-<p>¿A que casa estuvo apunto de ir Harry Potter cuando entró a Howarts?</p>
-<p class="pregunta1"><input type="radio" name="pregunta1" id="p11"> Slytherin.</p>
-<p class="pregunta1"><input type="radio" name="pregunta1" id="p12"> Ravenclaw.</p>
-<p class="pregunta1"><input type="radio" name="pregunta1" id="p13"> Hafflepuff. </p>
-<p class="pregunta1"><input type="radio" name="pregunta1" id="p14"> Gryffindor</p>
- 
-<p>¿A que casa ha pertenecido toda la familia Malfoy en Howarts?</p>
-<p class="pregunta2"><input type="radio" name="pregunta2" id="p21"> Ravenclaw.</p>
-<p class="pregunta2"><input type="radio" name="pregunta2" id="p22"> Slytherin.</p>
-<p class="pregunta2"><input type="radio" name="pregunta2" id="p23"> Gryffindor.</p>
-<p class="pregunta2"><input type="radio" name="pregunta2" id="p24"> Hafflepuff.</p>
- 
-<p>¿A que familia servia el elfo doméstico llamado "Dobby"?</p>
-<p class="pregunta3"><input type="radio" name="pregunta3" id="p31"> Weasley.</p>
-<p class="pregunta3"><input type="radio" name="pregunta3" id="p32"> Potter.</p>
-<p class="pregunta3"><input type="radio" name="pregunta3" id="p33"> Malfoy.</p>
-<p class="pregunta3"><input type="radio" name="pregunta3" id="p34"> Black.</p>
- 
-<p>¿Quien asesinó a "Nagini" la serpiente de Voldemort?</p>
-<p class="pregunta4"><input type="radio" name="pregunta4" id="p41"> Ron Weasley.</p>
-<p class="pregunta4"><input type="radio" name="pregunta4" id="p42"> Severus Snape.</p>
-<p class="pregunta4"><input type="radio" name="pregunta4" id="p43"> Draco Malfoy.</p>
-<p class="pregunta4"><input type="radio" name="pregunta4" id="p44"> Neville Longbottom.</p>
+  <div class="container">
+    <hr>
+    <img src="../logo.png">
+    <hr>
+  </div>
+  <div class="containerQuiz">
+    <form>
+      <p>¿En que película surge el conflicto entre Iron Man y Capitán América?</p>
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p11"> Avenger era de ultron.</p>
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p12"> Capitán América Civil War.</p>
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p13"> Spider Man Lejos de casa. </p>
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p14"> El increíble Hulk.</p>
 
-<p>¿Cual es la plataforma en la estación de Londres para abordar el expreso a Howarts?</p>
-<p class="pregunta5"><input type="radio" name="pregunta5" id="p51"> Plataforma 10 3/4.</p>
-<p class="pregunta5"><input type="radio" name="pregunta5" id="p52"> Plataforma 9 3/4.</p>
-<p class="pregunta5"><input type="radio" name="pregunta5" id="p53"> Plataforma Norte.</p>
-<p class="pregunta5"><input type="radio" name="pregunta5" id="p54"> Plataforma Howarts.</p>
+      <p>¿Quién es el hermano de Loki?</p>
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p21"> Tony Stark.</p>
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p22"> Fury.</p>
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p23"> Thor.</p>
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p24"> Clint Barton.</p>
 
-<p>¿Quien asumió el puesto de director de Howarts cuando Dumbledore murió</p>
-<p class="pregunta6"><input type="radio" name="pregunta6" id="p61"> Severus Snape.</p>
-<p class="pregunta6"><input type="radio" name="pregunta6" id="p62"> Lucius Malfoy.</p>
-<p class="pregunta6"><input type="radio" name="pregunta6" id="p63"> Voldemort.</p>
-<p class="pregunta6"><input type="radio" name="pregunta6" id="p64"> Bellatrix Lestrange.</p>
+      <p>En la Película "End Game" ¿Que vengador se sacrifica para obtener la gema del alma?</p>
+      <p class="pregunta3"><input type="radio" name="pregunta3" id="p31"> Black Widow.</p>
+      <p class="pregunta3"><input type="radio" name="pregunta3" id="p32"> Dr. Strange.</p>
+      <p class="pregunta3"><input type="radio" name="pregunta3" id="p33"> Ant Man.</p>
+      <p class="pregunta3"><input type="radio" name="pregunta3" id="p34"> Hulk.</p>
 
-<p>¿Cual es la familia con la que vivió Harry Potter antes de entrar a Howarts?</p>
-<p class="pregunta7"><input type="radio" name="pregunta7" id="p71"> Los Potter.</p>
-<p class="pregunta7"><input type="radio" name="pregunta7" id="p72"> Los Weasley.</p>
-<p class="pregunta7"><input type="radio" name="pregunta7" id="p73"> Los Black.</p>
-<p class="pregunta7"><input type="radio" name="pregunta7" id="p74"> Los Dursley.</p>
-<hr>
-<h2 id="resultado">Aciertos: 0</h2>
-<p class="p-b"><input type="button" value="L I S T O" onclick="resultado()"/></p>
-<p class="p-b"><input type="button" value="DE NUEVO" onclick="location.reload()"/></p>
-<hr>
-</form>
-    </div>
+      <p>¿Que villano esta en busca de las gemas del infinito?</p>
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p41"> Dr. Doom.</p>
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p42"> Galactus.</p>
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p43"> Thanos.</p>
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p44"> Sand Man.</p>
+
+      <p>¿A que reino pertenece Thor?</p>
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p51"> Midgard.</p>
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p52"> Helheim.</p>
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p53"> Muspelheim.</p>
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p54"> Asgard.</p>
+
+      <p>¿A que organización pertenece Nick Fury</p>
+      <p class="pregunta6"><input type="radio" name="pregunta6" id="p61"> S.H.I.E.L.D.</p>
+      <p class="pregunta6"><input type="radio" name="pregunta6" id="p62"> Hydra.</p>
+      <p class="pregunta6"><input type="radio" name="pregunta6" id="p63"> Sinester Six.</p>
+      <p class="pregunta6"><input type="radio" name="pregunta6" id="p64"> X-Man.</p>
+
+      <p>Durante la batalla final en "End Game"¿Que vengador llega sorpresivamente desde el espacio?</p>
+      <p class="pregunta7"><input type="radio" name="pregunta7" id="p71"> Iron Man.</p>
+      <p class="pregunta7"><input type="radio" name="pregunta7" id="p72"> Capitana Marvel.</p>
+      <p class="pregunta7"><input type="radio" name="pregunta7" id="p73"> Spider Man.</p>
+      <p class="pregunta7"><input type="radio" name="pregunta7" id="p74"> Star Lord.</p>
+      <hr>
+      <h2 id="resultado">Aciertos: 0</h2>
+      <p class="p-b"><input type="button" value="L I S T O" onclick="resultado()" /></p>
+      <p class="p-b"><input type="button" value="DE NUEVO" onclick="location.reload()" /></p>
+      <hr>
+    </form>
+  </div>
+  <div class="container">
+    <mi-footer></mi-footer>
+  </div>
 </body>
+
 </html>
