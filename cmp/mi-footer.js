@@ -1,3 +1,5 @@
+/*CLASE MiFooter IMPLEMENTADA EN LAS INTERFACES DEL PROYECTO*/
+
 class MiFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
